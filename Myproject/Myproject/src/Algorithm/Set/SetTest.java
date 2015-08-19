@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.Set;
 /**
  *	 	“我年龄的立方是个4位数。我年龄的4次方是个6位数。这10个数字正好包含了从0到9这10个数字，每个都恰好出现1次。” 
 

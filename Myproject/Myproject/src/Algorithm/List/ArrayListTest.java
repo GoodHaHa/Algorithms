@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.List;
 
 /**
  * 				角谷定理说: 任何一个正整数，如果是偶数，则除以2，如果是奇数则乘以3再加1，如此反复，必能最终得到1。 
