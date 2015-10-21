@@ -53,7 +53,7 @@ class QuickSort2 {
 
 }
 
-class Data implements Comparable<DataWrap>
+class Data implements Comparable<Data>
 {
 	int data;
 	public Data(int data)
@@ -70,9 +70,5 @@ class Data implements Comparable<DataWrap>
 		return this.data > base.data ? 1 
 			: (this.data == base.data ? 0 : -1);
 	}
-	@Override
-	public int compareTo(DataWrap o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+
 }
