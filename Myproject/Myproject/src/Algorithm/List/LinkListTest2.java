@@ -1,14 +1,23 @@
 package Algorithm.List;
 
+import Algorithm.List.List.Node;
 
 class List
 {
-	private Node head;
+	private static Node head;
 	
 	class Node
 	{
 		int data;
 		Node next;
+		public Node reverseList(List a) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	}
+	
+	public Node head(){
+		return head;
 	}
 	
 	public Node getTail()
@@ -40,6 +49,24 @@ class List
 			p = p.next;
 		}
 	}
+	
+	public static Node reverseList(Node head){
+		if(head == null) return head;
+		Node pre = head ;
+		Node cur = head.next;
+		Node next;
+		while(cur !=null){
+			next = cur.next;
+			cur.next = pre;
+			pre = cur;
+			cur = next;
+		}
+		head.next=null;
+		head = pre;
+		return head;
+	}
+	
+
 }
 
 
@@ -53,8 +80,15 @@ public class LinkListTest2
 		a.add(20);
 		a.add(18);
 		a.add(9);
-		
 		a.show();
+		Node b = a.reverseList(a.head());
+		while (b!=null){
+			System.out.print(b.data+"___");
+			b = b.next;
+
+		}
 	}	
+	
+
 }
 
