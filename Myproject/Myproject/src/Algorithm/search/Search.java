@@ -17,7 +17,6 @@ class Test{
 	
 }
 
-
 public class Search {
 	public static void main(String args[]){
 		String str =new Test().find("abcd");
