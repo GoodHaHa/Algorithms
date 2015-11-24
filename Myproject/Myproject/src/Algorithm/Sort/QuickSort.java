@@ -5,10 +5,11 @@ import java.util.Arrays;
 public class QuickSort{
 	
 	 public static void main(String[] args) {
-		  int[] datatest = new int[]{49,38,65,97,97,-76,13,27} ;
+		  int[] datatest = new int[]{49,38,65,97,97,0,-76,13,27} ;
 		  quickSort(datatest,0,datatest.length-1) ;
 		  System.out.println(Arrays.toString(datatest)) ;
-
+		  float a = 8.0f;
+		  System.out.println(a);
 		 }
 	private static void quickSort(int[] datatest, int start, int end) {
 

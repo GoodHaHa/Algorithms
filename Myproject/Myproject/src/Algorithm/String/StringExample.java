@@ -5,7 +5,10 @@ public class StringExample {
 	
 	public static void main(String[] args){
 		String test ="abcddd  ddddd";
-		System.out.println(reverseString(test));
+		char[] test2 = test.toCharArray();
+		System.out.println(test2);
+		
+		System.out.println(zipString(test));
 	}
 	
 	
